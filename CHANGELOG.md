@@ -1,0 +1,18 @@
+# Changelog
+
+## v1.1.0
+
+- Added bStats metrics integration
+- UpdateChecker now filters by game version and loader via Modrinth API — users only see updates compatible with their Minecraft version
+- Fixed thread-safety issue in UpdateChecker (volatile fields)
+
+## v1.0.0 — Initial Release
+
+- Bedrock sound bridging via Geyser — custom disc sounds are played to Bedrock players
+- Bedrock resource pack generator (`/cjb-bedrock generate`) - creates `.mcpack` with manifest, sound definitions, and sound files
+- Custom item registration via Geyser Custom Items API v2
+- Bedrock player detection via Floodgate API
+- Graceful no-op when Geyser or Floodgate is not installed
+- JSON-based configuration
+- Commands: `/cjb-bedrock generate`, `reload`, `status`, `help`
+- Modrinth update checker with join notifications

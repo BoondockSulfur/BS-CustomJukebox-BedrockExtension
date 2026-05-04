@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "debug": false,
+  "packOutputDirectory": "bedrock-pack",
+  "autoRegisterItems": true,
+  "autoDeliverPack": true,
+  "soundPrefix": "customjukebox",
+  "packName": "CustomJukebox Bedrock Sounds",
+  "packDescription": "Custom disc sounds for Bedrock Edition"
+}

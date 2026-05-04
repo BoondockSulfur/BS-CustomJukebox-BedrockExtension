@@ -1,0 +1,21 @@
+name: CustomJukebox-BedrockExtension
+version: ${version}
+main: de.boondocksulfur.customjukeboxbedrock.CustomJukeboxBedrockExtension
+api-version: '1.21'
+author: BoondockSulfur
+description: Bedrock Edition support for CustomJukebox via Geyser/Floodgate
+folia-supported: false
+depend: [CustomJukebox]
+softdepend: [Geyser-Spigot, floodgate]
+
+commands:
+  cjb-bedrock:
+    description: CustomJukebox Bedrock Extension commands
+    usage: /<command> <generate|reload|status|help>
+    aliases: [cjbb]
+    permission: customjukebox.bedrock.admin
+
+permissions:
+  customjukebox.bedrock.admin:
+    description: Access to Bedrock extension admin commands
+    default: op
