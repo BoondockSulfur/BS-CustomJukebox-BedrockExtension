@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.0.0
+
+- Updated to Paper 26.1.2 (new versioning system)
+- Updated to Java 25
+- Updated Geyser API to 2.10.0-SNAPSHOT
+- Updated Floodgate API to 2.2.5-SNAPSHOT
+- Updated Gradle to 9.5.0
+
 ## v1.1.0
 
 - Added bStats metrics integration

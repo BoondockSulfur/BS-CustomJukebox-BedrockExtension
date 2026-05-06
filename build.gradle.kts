@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "de.boondocksulfur"
-version = "1.1.0"
+version = "2.0.0"
 
 repositories {
     mavenCentral()
@@ -13,16 +13,16 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT")
-    compileOnly("org.geysermc.geyser:api:2.9.5-SNAPSHOT")
-    compileOnly("org.geysermc.floodgate:api:2.2.4-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:26.1.2.build.60-stable")
+    compileOnly("org.geysermc.geyser:api:2.10.0-SNAPSHOT")
+    compileOnly("org.geysermc.floodgate:api:2.2.5-SNAPSHOT")
     compileOnly(fileTree("../CustomJukebox/build/libs") { include("CustomJukebox-*.jar") })
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("org.bstats:bstats-bukkit:3.1.0")
 }
 
 java {
-    toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+    toolchain.languageVersion.set(JavaLanguageVersion.of(25))
 }
 
 tasks {
