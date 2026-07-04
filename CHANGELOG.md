@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.1.0
+
+- Unified release: one jar now supports Paper 1.21.4 through 26.x (matches CustomJukebox 3.1.0)
+- Built against Paper API 1.21.4 with `api-version: '1.21'` and Java 21 bytecode — loads on 1.21.4+ servers (Java 21) and 26.x servers (Java 25) alike
+- Requires CustomJukebox 3.1.0+
+
 ## v2.0.0
 
 - Updated to Paper 26.1.2 (new versioning system)

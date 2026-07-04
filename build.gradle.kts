@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "de.boondocksulfur"
-version = "2.0.0"
+version = "2.1.0"
 
 repositories {
     mavenCentral()
@@ -13,7 +13,9 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:26.1.2.build.60-stable")
+    // 1.21.4 API: matches CustomJukebox 3.1.0's unified baseline.
+    // Built jar runs on 1.21.4+ and 26.x (api-version stays '1.21', Java 21 bytecode).
+    compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
     compileOnly("org.geysermc.geyser:api:2.10.0-SNAPSHOT")
     compileOnly("org.geysermc.floodgate:api:2.2.5-SNAPSHOT")
     compileOnly(fileTree("../CustomJukebox/build/libs") { include("CustomJukebox-*.jar") })
@@ -22,7 +24,7 @@ dependencies {
 }
 
 java {
-    toolchain.languageVersion.set(JavaLanguageVersion.of(25))
+    toolchain.languageVersion.set(JavaLanguageVersion.of(21))
 }
 
 tasks {

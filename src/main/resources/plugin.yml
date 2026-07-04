@@ -1,7 +1,7 @@
 name: CustomJukebox-BedrockExtension
 version: ${version}
 main: de.boondocksulfur.customjukeboxbedrock.CustomJukeboxBedrockExtension
-api-version: '26.1.2'
+api-version: '1.21'
 author: BoondockSulfur
 description: Bedrock Edition support for CustomJukebox via Geyser/Floodgate
 folia-supported: false
